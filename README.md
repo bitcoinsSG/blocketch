@@ -28,18 +28,6 @@ Follow these steps to set up and test Blocketch locally.
 - An SMTP server for sending confirmation emails (e.g., Gmail, SendGrid)
 - For GUI mode: A display environment (e.g., X11 forwarding on Linux)
 
-### Directory Structure
-
-# Blocketch: Email Timestamping on Bitcoin via OpenTimestamps
-
-Blocketch is a free, open-source service that timestamps emails using Bitcoin's blockchain through the OpenTimestamps (OTS) protocol. No signup or registration required—just send an email to the service, and receive a cryptographic proof of existence anchored to Bitcoin’s immutable ledger. Ideal for legal proofs, archival records, or securing intellectual property.
-
-## Features
-- Simple Email Timestamping: Send an email, get a timestamp proof—no accounts needed.
-- Bitcoin Anchoring via OpenTimestamps: Leverages OTS to embed timestamps in Bitcoin transactions efficiently.
-- Tkinter GUI: Monitor email processing and configure IMAP/SMTP settings with a user-friendly interface.
-- Dockerized Deployment: Easy to set up and run with Docker, supporting both GUI and CLI modes.
-- Preliminary Post-Quantum Hashing: Optional use of post-quantum cryptography (Dilithium2) for future-proofing (configurable).
 
 ## Status
 This is a preliminary implementation with working code for email ingestion, timestamping, and proof delivery. It’s functional but rough around the edges—we’re looking for collaborators to help polish, secure, and scale it. Current version handles:
